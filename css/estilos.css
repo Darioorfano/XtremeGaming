@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Rowdies&display=swap');
+.bg-header{
+    background-color: rgb(68, 66, 66);
+}
+
+.logo{
+    font-size: 3em;
+    font-family: 'Rowdies', cursive;
+    color:#f8f9fa;
+}
+.logo:hover{
+    color:#f8f9fa;;
+}
+.input-busqueda{
+    height: 2.5em;
+    
+}
+
+.btn{
+    position:absolute;
+    right:1.4em;
+    width: 15%;
+    height: 2.5em;
+   background-color: #db1f32;
+   border: gainsboro;
+}
+.fa-search{
+    color: rgb(235, 217, 217);
+}
+
+.icons{
+display: flex;
+flex-direction: row;
+justify-content:space-around ; 
+flex-wrap: nowrap;
+}
+
+.icons i{
+ font-size: 2em;
+padding-right: 0.5em;
+color: #f8f9fa;;
+}
+
+
+.fa-user:hover{
+    color:orange;
+    cursor: pointer;
+}
+.fa-instagram:hover{
+    color:rgb(209,39,152);
+    cursor: pointer;
+}
+.fa-whatsapp:hover{
+    color:rgb(34, 176, 126);
+    cursor: pointer;
+}
+.fa-facebook-f:hover{
+    color: rgb(24, 119, 242);
+    cursor: pointer;
+}
+.fa-shopping-cart:hover{
+    color: #18b4d3;
+    cursor: pointer;
+}
+
+.expand-menu{
+    background-color: red;
+    height: 10em;
+    width: 50vw;
+    border-radius: 5px;
+   
+}
+.fourth-column-elements{
+    margin: 0 auto 4em auto;
+}
+
+.title{
+
+    font-family: 'Merriweather', serif;
+    font-size:2em;
+    border-bottom: 5px solid red;
+}
+.btn-add-to-cart{
+    width: 100%;
+    padding-bottom: 2em;
+    }
+    
+
+.bg-footer{
+    background-color: rgb(68, 66, 66);
+}
+   .container-button{
+    display: flex;   
+    justify-content: center;
+   }
+   .container-button a{
+       margin: auto;
+   }
