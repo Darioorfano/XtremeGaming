@@ -16,13 +16,16 @@
     
 }
 
-.btn{
+.boton{
     position:absolute;
     right:1.4em;
     width: 15%;
     height: 2.5em;
    background-color: #db1f32;
    border: gainsboro;
+}
+.boton:hover{
+    background-color: rgb(156, 8, 8);
 }
 .fa-search{
     color: rgb(235, 217, 217);
@@ -89,10 +92,4 @@ color: #f8f9fa;;
 .bg-footer{
     background-color: rgb(68, 66, 66);
 }
-   .container-button{
-    display: flex;   
-    justify-content: center;
-   }
-   .container-button a{
-       margin: auto;
-   }
+  
