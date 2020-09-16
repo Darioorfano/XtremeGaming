@@ -1,1 +1,1 @@
-https://darioorfano.github.io/XtremeGaming/index.html
+https://darioorfano.github.io/XtremeGaming/
