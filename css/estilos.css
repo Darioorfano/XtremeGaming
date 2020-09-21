@@ -88,6 +88,18 @@ color: #f8f9fa;;
     padding-bottom: 2em;
     }
     
+    .carousel-control-prev{
+        left: -25px !important
+    }
+    .carousel-control-next{
+        right: -25px !important
+    }
+    
+    .carousel-inner{
+       overflow: initial !important;
+    }
+
+
 
 .bg-footer{
     background-color: rgb(68, 66, 66);
