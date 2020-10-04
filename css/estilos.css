@@ -1,107 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Rowdies&display=swap');
-.bg-header{
-    background-color: rgb(68, 66, 66);
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Rowdies&display=swap");
+
+h5 {
+  font-size: 0.95rem;
 }
 
-.logo{
-    font-size: 3em;
-    font-family: 'Rowdies', cursive;
-    color:#f8f9fa;
-}
-.logo:hover{
-    color:#f8f9fa;;
-}
-.input-busqueda{
-    height: 2.5em;
-    
+.bg-header {
+  background-color: rgb(68, 66, 66);
 }
 
-.boton{
-    position:absolute;
-    right:1.4em;
-    width: 15%;
-    height: 2.5em;
-   background-color: #db1f32;
-   border: gainsboro;
+.logo {
+  font-size: 3em;
+  font-family: "Rowdies", cursive;
+  color: #f8f9fa;
 }
-.boton:hover{
-    background-color: rgb(156, 8, 8);
+.logo:hover {
+  color: #f8f9fa;
 }
-.fa-search{
-    color: rgb(235, 217, 217);
+.input-busqueda {
+  height: 2.5em;
 }
 
-.icons{
-display: flex;
-flex-direction: row;
-justify-content:space-around ; 
-flex-wrap: nowrap;
+.boton {
+  position: absolute;
+  right: 1.4em;
+  width: 15%;
+  height: 2.5em;
+  background-color: #db1f32;
+  border: gainsboro;
+}
+.boton:hover {
+  background-color: rgb(156, 8, 8);
+}
+.boton:focus {
+  background-color: rgb(156, 8, 8);
+}
+.fa-search {
+  color: rgb(235, 217, 217);
 }
 
-.icons i{
- font-size: 2em;
-padding-right: 0.5em;
-color: #f8f9fa;;
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
 }
 
-
-.fa-user:hover{
-    color:orange;
-    cursor: pointer;
-}
-.fa-instagram:hover{
-    color:rgb(209,39,152);
-    cursor: pointer;
-}
-.fa-whatsapp:hover{
-    color:rgb(34, 176, 126);
-    cursor: pointer;
-}
-.fa-facebook-f:hover{
-    color: rgb(24, 119, 242);
-    cursor: pointer;
-}
-.fa-shopping-cart:hover{
-    color: #18b4d3;
-    cursor: pointer;
+.icons i {
+  font-size: 2em;
+  padding-right: 0.5em;
+  color: #f8f9fa;
 }
 
-.expand-menu{
-    background-color: red;
-    height: 10em;
-    width: 50vw;
-    border-radius: 5px;
-   
+.fa-user:hover {
+  color: orange;
+  cursor: pointer;
 }
-.fourth-column-elements{
-    margin: 0 auto 4em auto;
+.fa-instagram:hover {
+  color: rgb(209, 39, 152);
+  cursor: pointer;
+}
+.fa-whatsapp:hover {
+  color: rgb(34, 176, 126);
+  cursor: pointer;
+}
+.fa-facebook-f:hover {
+  color: rgb(24, 119, 242);
+  cursor: pointer;
+}
+.fa-shopping-cart:hover {
+  color: #18b4d3;
+  cursor: pointer;
 }
 
-.title{
-
-    font-family: 'Merriweather', serif;
-    font-size:2em;
-    border-bottom: 5px solid red;
+.expand-menu {
+  background-color: red;
+  height: 10em;
+  width: 50vw;
+  border-radius: 5px;
 }
-.btn-add-to-cart{
-    width: 100%;
-    padding-bottom: 2em;
-    }
-    
-    .carousel-control-prev{
-        left: -25px !important
-    }
-    .carousel-control-next{
-        right: -25px !important
-    }
-    
-    .carousel-inner{
-       overflow: initial !important;
-    }
-
-
-
-.bg-footer{
-    background-color: rgb(68, 66, 66);
+.fourth-column-elements {
+  margin: 0 auto 4em auto;
 }
-  
+
+.title {
+  font-family: "Merriweather", serif;
+  font-size: 2em;
+  border-bottom: 5px solid red;
+}
+.btn-add-to-cart {
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+.flecha-izquierda {
+  position: relative;
+  right: 14em;
+  padding: 4em 5em 1em 0;
+  border-radius: 50%;
+}
+
+.flecha-derecha {
+  position: relative;
+  left: 10em;
+  padding: 4em 5em 1em 0;
+  border-radius: 50%;
+}
+
+.bg-footer {
+  background-color: rgb(68, 66, 66);
+}
+.bg-footer p {
+  color: #f8f9fa;
+}

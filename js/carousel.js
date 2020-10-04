@@ -5,3 +5,19 @@ $('.carousel').carousel({
    
   });
  
+ 
+  $("#product-slider").carousel({
+    ride:false,
+    interval:false
+
+
+  });
+ 
+
+  
+ 
+
+
+
+
+  
