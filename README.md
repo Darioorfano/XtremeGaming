@@ -1,1 +1,2 @@
-https://darioorfano.github.io/XtremeGaming/
+https://xtremegaming1.netlify.app/
+
