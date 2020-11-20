@@ -17,7 +17,9 @@ FB.getLoginStatus(function(response) {
 
 });
 
-
+FB.login(function(response) {
+  // handle the response
+}, {scope: 'email'});
 
 
 (function(d, s, id){
