@@ -1,28 +1,31 @@
 
-
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="es">
 <head>
-	<title>Iniciar sesion</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
- 
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/estilos.css">
 
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <script src="js/login.js"></script>
-	
+
+
+  <title>Inicio de sesion</title>
 </head>
+
 <body>
   <header class="container-fluid bg-header pt-4 ">
 
     <div class="row">
       <div class="col-xl-4 ml-4">
-        <a class="navbar-brand  logo" href="#">XTREME GAMING</a>
+        <a class="navbar-brand logo" href="index.html">XTREME GAMING</a>
       </div>
 
       <div class="col-xl-4 mr-1 mt-4">
@@ -58,10 +61,10 @@
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav m-auto pr-3 pt-2">
             <li class="nav-item active">
-              <a class="nav-link ml-5" href="#">Inicio<span class="sr-only">(current)</span></a>
+              <a class="nav-link ml-5" href="index.html">Inicio</a>
             </li>
 
 
@@ -126,11 +129,9 @@
 
   </header>
 
-
-
   <main class="container">
     <div class="row">
-      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto mt-5 pt-3">
         <div class="card card-signin my-5">
           <div class="card-body mb-3">
             <h5 class="card-title text-center pt-4">Iniciar sesion en Xtreme Gaming</h5>
@@ -149,71 +150,96 @@
                 <input type="checkbox" class="custom-control-input" id="customCheck1">
                 <label class="custom-control-label mt-3" for="customCheck1">Recordar contraseña</label>
               </div>
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Iniciar sesion</button>
+              <button class="btn btn-lg boton-inicio-sesion text-light btn-block text-uppercase" type="submit">Iniciar sesion</button>
               <hr class="my-4">
             
               <div id="fb-root" class="d-flex">
-                <div class="fb-login-button m-auto" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" data-width=""></div>
-
+                <div:login-button class="fb-login-button m-auto" data-size="large"
+                data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" data-width=""></div:login-button>
+              
               </div>
-              <button class="btn btn-lg btn-block text-uppercase  mt-4 mb-4 bg-danger text-light" type="submit"></i> Registrarse</button>
+
+            
+
+              <button class="btn btn-lg btn-block text-uppercase boton-registrar  mt-4 mb-4 text-light" type="submit"></i> Registrarse</button>
             </form>
           </div>
         </div>
       </div>
     </div>
   </main>
+
+
+
+  <footer class="container-fluid bg-footer p-4 ">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+              <div class="container">
+            <p class="pl-5 pt-2">Informacion</p>
+            <ul class="listado-preguntas ">
+              <li class="pl-2 pb-3" ><a class="text-light text-decoration-none" href="index.html">INICIO</a></li>
+              <li class="pl-2 pb-3" ><a class="text-light text-decoration-none" href="contacto.html">CONTACTO</a></li>
+              <li ><a class="text-light" href="donde_estamos.html">¿DÓNDE ESTAMOS?</a></li>
+              
+            </ul>
+          </div>
+          </div>
+    
+          <div class="col-lg-4">
+            <div class="container pt-1 text-center">
+            <p>XTREME GAMING</p>
+            <p>2020</p>
+            <p>Todos los derechos reservados</p>
+          </div>
+          </div>
+    
+        <div class="col-lg-4">
+          <div class="container">
+  
+            <p >NEWSLEETER</p>
+            <p>Recibi ofertas en tu mail</p>
+            <input type="text" placeholder="Tu Email">
+            <button>SUSCRIBIRME</button>
+          </div>
+         
+      
+            
+           
+    
+    
+        </div>
+        </div>
+      
+    
+    
+    </div>
+  
+  
+  
+  
+  </footer>
+   <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="js/jquery.min.js"></script>
+
+  
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0&appId=4075264515835811&autoLogAppEvents=1" nonce="aYz0zDOc"></script>
+
+
+
+
+
 </body>
 
-<footer class="container-fluid bg-footer p-4 ">
-  <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-            <div class="container">
-          <p class="pl-5 pt-2">Informacion</p>
-          <ul class="listado-preguntas ">
-            <li class="pl-2 pb-3" ><a class="text-light text-decoration-none" href="index.html">INICIO</a></li>
-            <li class="pl-2 pb-3" ><a class="text-light text-decoration-none" href="contacto.html">CONTACTO</a></li>
-            <li ><a class="text-light" href="donde_estamos.html">¿DÓNDE ESTAMOS?</a></li>
-            
-          </ul>
-        </div>
-        </div>
-  
-        <div class="col-lg-4">
-          <div class="container pt-1 text-center">
-          <p>XTREME GAMING</p>
-          <p>2020</p>
-          <p>Todos los derechos reservados</p>
-        </div>
-        </div>
-  
-      <div class="col-lg-4">
-        <div class="container">
 
-          <p >NEWSLEETER</p>
-          <p>Recibi ofertas en tu mail</p>
-          <input type="text" placeholder="Tu Email">
-          <button>SUSCRIBIRME</button>
-        </div>
-       
-    
-          
-         
-  
-  
-      </div>
-      </div>
-    
-  
-  
-  </div>
-
-
-
-
-</footer>
-
-
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0&appId=4075264515835811&autoLogAppEvents=1" nonce="aYz0zDOc"></script>
 </html>

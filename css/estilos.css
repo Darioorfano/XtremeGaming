@@ -77,6 +77,7 @@ h5 {
   height: 10em;
   width: 50vw;
   border-radius: 5px;
+  
 }
 .expand-menu a{
   color: white;
@@ -125,4 +126,15 @@ h5 {
 .listado-preguntas{
   list-style: none;
 }
+
+
+
+
 /*Pagina login*/
+.boton-inicio-sesion{
+  background-color:rgb(6, 165, 117);
+  color:white;
+}
+.boton-registrar{
+  background-color:rgb(195, 31, 31);
+}
