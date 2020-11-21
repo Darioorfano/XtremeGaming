@@ -128,8 +128,6 @@ h5 {
 }
 
 
-
-
 /*Pagina login*/
 .boton-inicio-sesion{
   background-color:rgb(6, 165, 117);
@@ -137,4 +135,5 @@ h5 {
 }
 .boton-registrar{
   background-color:rgb(195, 31, 31);
+cursor: pointer;
 }
