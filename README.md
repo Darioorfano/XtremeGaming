@@ -1,2 +1,1 @@
-https://xtremegaming1.netlify.app/
-
+https://xtremegaming.firebaseapp.com/
