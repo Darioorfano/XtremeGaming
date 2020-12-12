@@ -1,54 +1,27 @@
-function registrar(){
-var email= document.getElementById("inputEmail").value;
-var contraseña= document.getElementById("inputPassword").value;
+function login(){
+  var provider = new firebase.auth.FacebookAuthProvider();
+  firebase.auth().signInWithPopup(provider).then(function(result) {
+    // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+    var token = result.credential.accessToken;
+    // The signed-in user info.
+    var user = result.user;
+    console.log(user);
+    /*
+    window.location.href="https://xtremegaming.firebaseapp.com/miCuenta.html"
+    */
 
-
-/*Registrar Usuarios nuevos*/ 
-firebase.auth().createUserWithEmailAndPassword(email,contraseña)
-  .then((user) => {
-    // Signed in
     // ...
-  })
-  .catch((error) => {
+  }).catch(function(error) {
+    // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
-    // ..
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
   });
 
 }
 
-function ingreso (){
-
-var emailRegistro=document.getElementById("emailRegistro").value;
-var contraseñaRegistro=document.getElementById("contraseñaRegistro").value;
-
-
-    firebase.auth().signInWithEmailAndPassword(emailRegistro,contraseñaRegistro)
-    .then((user) => {
-      // Signed in
-      // ...
-    })
-    .catch((error) => {
-      var errorCode = error.code;
-      var errorMessage = error.message;
-    });
-
-}
-function datosUsuarios(){
-    firebase.auth().onAuthStateChanged((user) => {
-        if (user) {
-       console.log("existe usuario");
-            var displayName=user.displayName;
-       var email=user.email;
-       var emailVerified=user.emailVerified;
-       var photoURL=user.photoURL;
-       var isAnonymous= user.isAnonymous;
-       var uid = user.uid;
-        var providerData=user.providerData;
-        } else {
-          // User is signed out
-          console.log("no existe usuario");
-        }
-      });
-}
-datosUsuarios();
+document.getElementById("button-login").addEventListener("click",login());
