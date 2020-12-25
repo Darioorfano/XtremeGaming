@@ -15,9 +15,10 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+   
 
-
-
+    
 
   <title>Inicio de sesion</title>
 </head>
@@ -158,21 +159,20 @@
               
               
 
-              <div id="button-login"class="d-flex">
-                <div class="fb-login-button m-auto" data-size="large"  data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" data-width=""></div>
+              <div id="button-login" class="container d-flex mb-3">
+                <div class="m-auto btn btn-primary btn-lg text-light"><i class="fab fa-facebook-f mr-3"></i>Conectar Con Facebook</div>
               </div>
            
               
 
 
-              <div class="container-button-google d-flex">
-                <div class="g-signin2 m-auto pt-4"  data-width="300" data-height="40" data-longtitle="true"></div>
-              </div>
+              <div class="container-button-google d-flex mt-4 mb-5">
+        
+               <div class="m-auto btn btn-danger btn-lg text-light" id="btnLoginGoogle"><i class="fab fa-google mr-4"></i>Conectar Con Google</div>
+            </div>
               
-            
-
-               <a href="registro.html" class="text-decoration-none"><button class="btn btn-lg btn-block text-uppercase boton-registrar  mt-4 mb-4 text-light"
-                type="submit">Registrarse</button></a>
+             
+              <a href="registro.html" class="text-decoration-none btn btn-lg btn-block text-uppercase boton-registrar  mt-4 mb-4 text-light">Registrarse</a>
             </form>
           </div>
         </div>
@@ -237,10 +237,11 @@
     
     <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
-
- <script src="js/firebaseconfig.js"></script>
- <script src="js/app.js"></script>
- <script src="https://apis.google.com/js/platform.js" async defer></script>
+    
+    <script src="js/firebaseconfig.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  
+    <script src="js/app.js"></script>
  
 </body>
 
