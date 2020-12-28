@@ -141,7 +141,6 @@ cursor: pointer;
 
 
 
-
 /*Pagina miCuenta*/
 .fa-user-circle{
   font-size: 15em;
@@ -153,10 +152,32 @@ cursor: pointer;
  cursor: pointer;
 }
 .tarjetas p{
-  color: white;
+color: white;
 text-align: center;
 font-weight: bolder;
 font-size: 1.3em;
 margin-top: 0.5em;
 }
+#fotoPerfil img{
+height: 10em;
+border-radius: 50%;
+}
+#nombreUsuario{
+  font-family: "Merriweather", serif;
+ font-size: 2.5em;
+ 
+}
 
+
+#btnLogoutGoogle{
+  position:relative;
+  right:0;
+  
+}
+
+.bg-user{
+  background-image: url(../img/background_user_3.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
