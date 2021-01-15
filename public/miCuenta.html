@@ -19,14 +19,14 @@
 
 
 
-  <title>Inicio de sesion</title>
+  <title>Mi cuenta</title>
 </head>
 
 <body>
   <header class="container-fluid bg-header pt-4 ">
 
     <div class="row">
-      <div class="col-xl-4 ml-4">
+      <div class="col-xl-4 ml-4 d-flex">
         <a class="navbar-brand logo" href="index.html">XTREME GAMING</a>
       </div>
 
@@ -43,12 +43,11 @@
 
       </div>
 
-      <div class="col-xl-2 mt-4 icons ml-5 pr-1 ">
-        <a href="login.html"><i class="fas fa-user"></i></a>
-        <i class="fab fa-instagram"><a href="https://www.instagram.com/ "></a></i>
-        <i class="fab fa-facebook-f"><a href="https://www.facebook.com/"></a></i>
-        <i class="fab fa-whatsapp"><a href="https://www.whatsapp.com/?lang=es"></a></i>
-        <i class="fas fa-shopping-cart"></i>
+      <div class="col-xl-1 ml-5 mt-4 icons  ">
+        <a class="usuario" href="login.html" ><i class="fas fa-user  "></i></a>
+        <a href=""><i class="fas fa-shopping-cart ml-4 " ></i></a>
+
+      </div>
 
       </div>
 
@@ -65,31 +64,31 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav m-auto pr-3 pt-2">
             <li class="nav-item active">
-              <a class="nav-link ml-5" href="index.html">Inicio</a>
+              <a class="nav-link ml-4 inicio" href="index.html">Inicio<span class="sr-only">(current)</span></a>
             </li>
 
 
             <li class="nav-item dropdown pl-3">
-              <a class="nav-link active dropdown-toggle ml-3" href="#" id="navbarDropdownMenuLink" role="button"
+              <a class="nav-link active dropdown-toggle  ml-2" href="#" id="navbarDropdownMenuLink" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Productos
               </a>
               <div class="dropdown-menu expand-menu " aria-labelledby="navbarDropdownMenuLink">
                 <div class="row">
-                  <div class="column-xl-3 m-auto">
+                  <div class="col-xl-3 m-auto">
                     <a class="dropdown-item" href="#">Almacenamiento</a>
                     <a class="dropdown-item" href="#">Combo actualizaci&oacute;n</a>
                     <a class="dropdown-item" href="#">Fuentes</a>
                     <a class="dropdown-item" href="#">Gabinetes</a>
                   </div>
-                  <div class="column-xl-3 m-auto">
+                  <div class="col-xl-3 m-auto">
                     <a class="dropdown-item" href="#">Memorias</a>
                     <a class="dropdown-item" href="#">Monitores
                     </a>
                     <a class="dropdown-item" href="#">Motherboards</a>
                     <a class="dropdown-item" href="#">Notebooks</a>
                   </div>
-                  <div class="column-xl-3 m-auto">
+                  <div class="col-xl-3 m-auto">
                     <a class="dropdown-item " href="#">PC Armadas</a>
                     <a class="dropdown-item" href="#">Perif&eacute;ricos
                     </a>
@@ -97,7 +96,7 @@
                     <a class="dropdown-item" href="#">Procesadores</a>
                   </div>
 
-                  <div class="column-xl-3 m-auto">
+                  <div class="col-xl-3 m-auto">
                     <div class="
                   fourth-column-elements">
                       <a class="dropdown-item pb-6" href="#">Refrigeraci&oacute;n</a>
@@ -106,13 +105,15 @@
 
 
 
-
                   </div>
             <li class="nav-item active pr-2">
-              <a class="nav-link ml-4 " id="miCuenta" href="miCuenta.html">Mi Cuenta<span class="sr-only">(current)</span></a>
+              <a class="nav-link ml-4 micuenta " href="miCuenta.html">Mi Cuenta<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active pr-2">
-              <a class="nav-link ml-4" href="#">Encontra tu equipo<span class="sr-only">(current)</span></a>
+              <a class="nav-link ml-4 carrito_responsive  " href="carrito.html">Carrito<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active pr-2">
+              <a class="nav-link ml-4" href="#">Contact&aacute;nos<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active pr-3">
               <a class="nav-link ml-4" href="ayuda.html">Ayuda<span class="sr-only">(current)</span></a>
@@ -130,17 +131,32 @@
 
   </header>
 
-  <main class="container-fluid bg-user pt-5 pb-5">
+<div class="social-networks">
+  <a class="" href="https://www.instagram.com/ "> <i class="fab fa-instagram instagram"></i></a>
+  <a class="" href="https://www.facebook.com/"><i class="fab fa-facebook facebook "></i></a>
+ <a class="" href="https://www.whatsapp.com/?lang=es"> <i class="fab fa-whatsapp whatsapp"></i></a>
+</div>
+
+  <main class="container-fluid bg-user pt-5 pb-5" id="backgroundUser">
 
     
     <section class="container  pt-5 mb-5">
 
       <!--Establecemos un div con un id, ese id lo usaremos en el Js con el innerhtml-->
-   
+   <!--
+      <div class="row d-flex ">
+        <div class="col-lg-3  order-2 order-sm-1">
+
+          <button type="button" id="btnCustomBackground" class="btn btn-lg btn-danger " data-toggle="modal" data-target="#exampleModal">
+            Modificar fondo
+          </button>
+   -->
+     
+        
         <div class="row d-flex ">
-          <div class="col-lg-3">
+          <div class="col-lg-3  order-2 order-sm-3 order-md ">
  
-            <button type="button" id="btnCustomBackground" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#exampleModal">
+            <button type="button" id="btnCustomBackground" class="btn btn-lg btn-danger " data-toggle="modal" data-target="#exampleModal">
               Modificar fondo
             </button>
             
@@ -150,7 +166,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Seleccione su fondo</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -159,13 +175,31 @@
             <div id="carouselBackgroundPhoto" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="img/background_user_1.jpg" class="d-block w-100" alt="...">
+                 
+                  <img  src="img/background_user_1.jpg"  class="d-block w-100 imagen_fondoUsuario" alt="...">
+                  <div class="container-button mt-3">
+                    <input type="radio" value="background_user_1.jpg" name="backgroundOption" id="fondo1" class="radios d-flex pt-1 m-auto ">
+                  </div>
+                </div>
+                
+
+                <div class="carousel-item">
+                  <img src="img/background_user_2.jpg" class="d-block w-100 imagen_fondoUsuario" alt="...">
+                  
+                  <div class="container-button mt-3">
+                    <input type="radio" value="background_user_2.jpg" name="backgroundOption" id="fondo2"  class="radios d-flex pt-1 m-auto ">
+                  </div>
+
+
                 </div>
                 <div class="carousel-item">
-                  <img src="img/background_user_2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/background_user_3.jpg" class="d-block w-100" alt="...">
+                  <img src="img/background_user_3.jpg"   class="d-block w-100 imagen_fondoUsuario" alt="...">
+                  <div class="container-button mt-3">
+                    <input type="radio" name="backgroundOption" value="background_user_3.jpg" id="fondo3" class="radios d-flex pt-1 m-auto ">
+                  </div>
+
+
+
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carouselBackgroundPhoto" role="button" data-slide="prev">
@@ -178,9 +212,12 @@
               </a>
             </div>
           </div>
+
+       
+
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            <button type="button"  id="button-save" class="btn btn-primary">Guardar Cambios </button>
           </div>
         </div>
       </div>
@@ -188,7 +225,25 @@
 
           </div>
         
-          <div class="col-lg-6 d-flex justify-content-center">
+          <!--<div class="col-lg-6  order-1 order-sm-2 d-flex justify-content-center">
+        
+     
+            <article id="fotoPerfil" class="m-auto">
+    
+            </article>
+    
+    
+          </div>
+          
+          <div class="col-lg-3 order-3 ">
+           <button type="button" class="btn btn-lg btn-danger "  id="btnLogout">Cerrar Sesion</button>
+          </div>
+-->
+          
+
+
+
+          <div class="col-lg-6  order-1 order-sm-2 d-flex justify-content-center">
         
      
            <article id="fotoPerfil" class="m-auto">
@@ -198,8 +253,8 @@
    
          </div>
          
-         <div class="col-lg-3">
-          <button type="button" class="btn btn-lg btn-danger"  id="btnLogout">Cerrar Sesion</button>
+         <div class="col-lg-3 order-3 ">
+          <button type="button" class="btn btn-lg btn-danger "  id="btnLogout">Cerrar Sesion</button>
          </div>
        
 
@@ -209,12 +264,12 @@
     </section>
     
     <section class="container ">
-      <article class="d-flex mb-4 ">
+      <article class="d-flex mb-4  ">
         <h3 class="m-auto" id="nombreUsuario"></h3>
       </article>
 
 
-      <div class="row d-flex flex-nowrap pb-5  ">
+      <div class="row  pb-5 articles-responsives">
 
         <article class="col-lg-4 mr-3 tarjetas">
           <p>FACTURAS</p>
@@ -222,7 +277,7 @@
         <article class="col-lg-4  mr-3 tarjetas">
           <p>PEDIDOS</p>
         </article>
-        <article class="col-lg-4  tarjetas">
+        <article class="col-lg-4 mr-3 tarjetas">
           <p>HORARIOS DE ATENCI&Oacute;N</p>
         </article>
     </section>
@@ -231,22 +286,23 @@
 
   </main>
 
-  <footer class="container-fluid bg-footer p-4  ">
-    <div class="container">
+  <footer class="container-fluid bg-footer p-4">
+    <div class="container ">
       <div class="row">
-        <div class="col-lg-4">
-          <div class="container">
-            <p class="pl-5 pt-2">Informacion</p>
-            <ul class="listado-preguntas ">
-              <li class="pl-2 pb-3"><a class="text-light text-decoration-none" href="index.html">INICIO</a></li>
-              <li class="pl-2 pb-3"><a class="text-light text-decoration-none" href="contacto.html">CONTACTO</a></li>
+        <div class="col-lg-4 col-md-4 first-column ">
+          <div class="container menuFooter">
+            <p class=" pt-2 informacion">INFORMACI&Oacute;N </p>
+            <ul class="listado-preguntas  ">
+
+              <li class=" pb-3"><a class="text-light text-decoration-none" href="index.html">INICIO</a></li>
+              <li class=" pb-3"><a class="text-light text-decoration-none" href="contacto.html">CONTACTO</a></li>
               <li><a class="text-light" href="donde_estamos.html">¿DÓNDE ESTAMOS?</a></li>
 
             </ul>
           </div>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4 second-column">
           <div class="container pt-1 text-center">
             <p>XTREME GAMING</p>
             <p>2020</p>
@@ -254,19 +310,18 @@
           </div>
         </div>
 
-        <div class="col-lg-4">
-          <div class="container">
+        <div class="col-lg-4 col-md-4 
+        third-column">
+          <div class="container container-newsletter">
 
-            <p>NEWSLEETER</p>
+            <p>NEWSLETTER</p>
             <p>Recibi ofertas en tu mail</p>
-            <input type="text" placeholder="Tu Email">
-            <button>SUSCRIBIRME</button>
+            <input type="text" class="inputNewsletter" placeholder="Tu Email">
+            <button class="btn btn-danger boton-suscribirme">SUSCRIBIRME</button>
           </div>
 
         </div>
       </div>
-
-
 
     </div>
 
