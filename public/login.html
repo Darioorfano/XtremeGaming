@@ -15,9 +15,10 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+   
 
-
-
+    
 
   <title>Inicio de sesion</title>
 </head>
@@ -25,12 +26,12 @@
 <body class="bg-dark">
   <header class="container-fluid bg-header pt-4 ">
 
-    <div class="row">
-      <div class="col-xl-4 ml-4">
+    <div class="row d-lg-flex flex-lg-nowrap">
+      <div class=" col-lg-4 mt-lg-3 col-xl-4 ml-4 d-flex ">
         <a class="navbar-brand logo" href="index.html">XTREME GAMING</a>
       </div>
 
-      <div class="col-xl-4 mr-1 mt-4">
+      <div class="col-lg-5 col-xl-4 ml-xl-5 pt-xl-3 mt-xl-4 mr-1 mt-4">
 
         <form class="form-inline my-2 my-lg-0 ">
           <input class="form-control input-busqueda mr-sm-2 w-100 " type="search" placeholder="Buscar producto..."
@@ -43,12 +44,9 @@
 
       </div>
 
-      <div class="col-xl-2 mt-4 icons ml-5 pr-1 ">
-        <a href="login.html"><i class="fas fa-user"></i></a>
-        <i class="fab fa-instagram"><a href="https://www.instagram.com/ "></a></i>
-        <i class="fab fa-facebook-f"><a href="https://www.facebook.com/"></a></i>
-        <i class="fab fa-whatsapp"><a href="https://www.whatsapp.com/?lang=es"></a></i>
-        <i class="fas fa-shopping-cart"></i>
+      <div class="col-lg-1 col-xl-1 pt-xl-3 ml-5 mt-4 icons  ">
+        <a class="usuario" href="login.html"><i class="fas fa-user  "></i></a>
+        <a href=""><i class="fas fa-shopping-cart ml-4 "></i></a>
 
       </div>
 
@@ -65,31 +63,31 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav m-auto pr-3 pt-2">
             <li class="nav-item active">
-              <a class="nav-link ml-5" href="index.html">Inicio</a>
+              <a class="nav-link ml-4" href="index.html">Inicio</a>
             </li>
 
 
             <li class="nav-item dropdown pl-3">
-              <a class="nav-link active dropdown-toggle ml-3" href="#" id="navbarDropdownMenuLink" role="button"
+              <a class="nav-link active dropdown-toggle ml-2" href="#" id="navbarDropdownMenuLink" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Productos
               </a>
               <div class="dropdown-menu expand-menu " aria-labelledby="navbarDropdownMenuLink">
                 <div class="row">
-                  <div class="column-xl-3 m-auto">
+                  <div class="col-lg-3 col-xl-3 m-auto">
                     <a class="dropdown-item" href="#">Almacenamiento</a>
                     <a class="dropdown-item" href="#">Combo actualizaci&oacute;n</a>
                     <a class="dropdown-item" href="#">Fuentes</a>
                     <a class="dropdown-item" href="#">Gabinetes</a>
                   </div>
-                  <div class="column-xl-3 m-auto">
+                  <div class="col-lg-3 col-xl-3 m-auto">
                     <a class="dropdown-item" href="#">Memorias</a>
                     <a class="dropdown-item" href="#">Monitores
                     </a>
                     <a class="dropdown-item" href="#">Motherboards</a>
                     <a class="dropdown-item" href="#">Notebooks</a>
                   </div>
-                  <div class="column-xl-3 m-auto">
+                  <div class="col-lg-3 col-xl-3 m-auto">
                     <a class="dropdown-item " href="#">PC Armadas</a>
                     <a class="dropdown-item" href="#">Perif&eacute;ricos
                     </a>
@@ -97,7 +95,7 @@
                     <a class="dropdown-item" href="#">Procesadores</a>
                   </div>
 
-                  <div class="column-xl-3 m-auto">
+                  <div class="col-lg-3 col-xl-3 m-auto">
                     <div class="
                   fourth-column-elements">
                       <a class="dropdown-item pb-6" href="#">Refrigeraci&oacute;n</a>
@@ -109,13 +107,13 @@
 
                   </div>
             <li class="nav-item active pr-2">
-              <a class="nav-link ml-4 " href="miCuenta.html ">Mi Cuenta<span class="sr-only">(current)</span></a>
+              <a class="nav-link ml-4 micuenta"  href="miCuenta.html ">Mi Cuenta<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active pr-2">
-              <a class="nav-link ml-4" href="#">Encontra tu equipo<span class="sr-only">(current)</span></a>
+              <a class="nav-link ml-4" href="contacto.html">Contactanos<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active pr-3">
-              <a class="nav-link ml-4" href="#">Ayuda<span class="sr-only">(current)</span></a>
+              <a class="nav-link ml-4" href="ayuda.html">Ayuda<span class="sr-only">(current)</span></a>
             </li>
         </div>
 
@@ -129,6 +127,12 @@
 
 
   </header>
+
+<div class="social-networks">
+  <a class="" href="https://www.instagram.com/ "> <i class="fab fa-instagram instagram"></i></a>
+  <a class="" href="https://www.facebook.com/"><i class="fab fa-facebook facebook "></i></a>
+ <a class="" href="https://www.whatsapp.com/?lang=es"> <i class="fab fa-whatsapp whatsapp"></i></a>
+</div>
 
   <main class="container">
     <div class="row">
@@ -152,27 +156,26 @@
                 <input type="checkbox" class="custom-control-input" id="customCheck1">
                 <label class="custom-control-label mt-3" for="customCheck1">Recordar contraseña</label>
               </div>
-              <button class="btn btn-lg boton-inicio-sesion text-light btn-block text-uppercase" type="submit">Iniciar
+              <button class="btn btn-lg boton-inicio-sesion text-light btn-block text-uppercase" id="botonInicioSesion">Iniciar
                 sesion</button>
               <hr class="my-4">
               
               
 
-              <div id="button-login"class="d-flex">
-                <div class="fb-login-button m-auto" data-size="large"  data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" data-width=""></div>
+              <div id="button-login" class="container d-flex mb-3">
+                <div class="m-auto btn btn-primary btn-lg text-light" id="btnLoginFacebook"><i class="fab fa-facebook-f mr-3"></i>Conectar Con Facebook</div>
               </div>
            
               
 
 
-              <div class="container-button-google d-flex">
-                <div class="g-signin2 m-auto pt-4"  data-width="300" data-height="40" data-longtitle="true"></div>
-              </div>
+              <div class="container-button-google d-flex mt-4 mb-5">
+        
+               <div class="m-auto btn btn-danger btn-lg text-light" id="btnLoginGoogle"><i class="fab fa-google mr-4"></i>Conectar Con Google</div>
+            </div>
               
-            
-
-               <a href="registro.html" class="text-decoration-none"><button class="btn btn-lg btn-block text-uppercase boton-registrar  mt-4 mb-4 text-light"
-                type="submit">Registrarse</button></a>
+             
+              <a href="registro.html" class="text-decoration-none btn btn-lg btn-block text-uppercase boton-registrar  mt-4 mb-4 text-light">Registrarse</a>
             </form>
           </div>
         </div>
@@ -181,23 +184,23 @@
   </main>
 
 
-
-  <footer class="container-fluid bg-footer p-4 ">
-    <div class="container">
+  <footer class="container-fluid bg-footer p-4">
+    <div class="container ">
       <div class="row">
-        <div class="col-lg-4">
-          <div class="container">
-            <p class="pl-5 pt-2">Informacion</p>
-            <ul class="listado-preguntas ">
-              <li class="pl-2 pb-3"><a class="text-light text-decoration-none" href="index.html">INICIO</a></li>
-              <li class="pl-2 pb-3"><a class="text-light text-decoration-none" href="contacto.html">CONTACTO</a></li>
+        <div class="col-lg-4 col-md-4 first-column ">
+          <div class="container menuFooter">
+            <p class=" pt-2 informacion">INFORMACI&Oacute;N </p>
+            <ul class="listado-preguntas  ">
+
+              <li class=" pb-3"><a class="text-light text-decoration-none" href="index.html">INICIO</a></li>
+              <li class=" pb-3"><a class="text-light text-decoration-none" href="contacto.html">CONTACTO</a></li>
               <li><a class="text-light" href="donde_estamos.html">¿DÓNDE ESTAMOS?</a></li>
 
             </ul>
           </div>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4 second-column">
           <div class="container pt-1 text-center">
             <p>XTREME GAMING</p>
             <p>2020</p>
@@ -205,19 +208,18 @@
           </div>
         </div>
 
-        <div class="col-lg-4">
-          <div class="container">
+        <div class="col-lg-4 col-md-4 
+        third-column">
+          <div class="container container-newsletter">
 
-            <p>NEWSLEETER</p>
+            <p>NEWSLETTER</p>
             <p>Recibi ofertas en tu mail</p>
-            <input type="text" placeholder="Tu Email">
-            <button>SUSCRIBIRME</button>
+            <input type="text" class="inputNewsletter" placeholder="Tu Email">
+            <button class="btn btn-danger boton-suscribirme">SUSCRIBIRME</button>
           </div>
 
         </div>
       </div>
-
-
 
     </div>
 
@@ -237,10 +239,11 @@
     
     <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
-
- <script src="js/firebaseconfig.js"></script>
- <script src="js/app.js"></script>
- <script src="https://apis.google.com/js/platform.js" async defer></script>
+    
+    <script src="js/firebaseconfig.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  
+    <script src="js/app.js"></script>
  
 </body>
 

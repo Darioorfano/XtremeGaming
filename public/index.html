@@ -12,19 +12,19 @@
 
   <link rel="stylesheet" href="css/all.css">
   <link rel="stylesheet" href="css/estilos.css">
-
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <title>Xtreme Gaming</title>
 </head>
 
 <body>
   <header class="container-fluid bg-header pt-4 ">
 
-    <div class="row">
-      <div class="col-xl-4 ml-4">
+    <div class="row d-lg-flex flex-lg-nowrap">
+      <div class=" col-lg-4 mt-lg-3 col-xl-4 ml-4 d-flex ">
         <a class="navbar-brand logo" href="index.html">XTREME GAMING</a>
       </div>
 
-      <div class="col-xl-4 mr-1 mt-4">
+      <div class="col-lg-5 col-xl-4 ml-xl-5 pt-xl-3 mt-xl-4 mr-1 mt-4">
 
         <form class="form-inline my-2 my-lg-0 ">
           <input class="form-control input-busqueda mr-sm-2 w-100 " type="search" placeholder="Buscar producto..."
@@ -37,12 +37,9 @@
 
       </div>
 
-      <div class="col-xl-2 mt-4 icons ml-5 pr-1 ">
-        <a href="login.html"><i class="fas fa-user"></i></a>
-        <i class="fab fa-instagram"><a href="https://www.instagram.com/ "></a></i>
-        <i class="fab fa-facebook-f"><a href="https://www.facebook.com/"></a></i>
-        <i class="fab fa-whatsapp"><a href="https://www.whatsapp.com/?lang=es"></a></i>
-        <i class="fas fa-shopping-cart"></i>
+      <div class="col-lg-1 col-xl-1 pt-xl-3 ml-5 mt-4 icons  ">
+        <a class="usuario" href="login.html"><i class="fas fa-user  "></i></a>
+        <a href=""><i class="fas fa-shopping-cart ml-4 "></i></a>
 
       </div>
 
@@ -59,31 +56,31 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav m-auto pr-3 pt-2">
             <li class="nav-item active">
-              <a class="nav-link ml-5" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+              <a class="nav-link ml-4 inicio" href="index.html">Inicio<span class="sr-only">(current)</span></a>
             </li>
 
 
             <li class="nav-item dropdown pl-3">
-              <a class="nav-link active dropdown-toggle ml-3" href="#" id="navbarDropdownMenuLink" role="button"
+              <a class="nav-link active dropdown-toggle  ml-2" href="#" id="navbarDropdownMenuLink" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Productos
               </a>
               <div class="dropdown-menu expand-menu " aria-labelledby="navbarDropdownMenuLink">
                 <div class="row">
-                  <div class="column-xl-3 m-auto">
+                  <div class="col-lg-3 col-xl-3 m-auto">
                     <a class="dropdown-item" href="#">Almacenamiento</a>
                     <a class="dropdown-item" href="#">Combo actualizaci&oacute;n</a>
                     <a class="dropdown-item" href="#">Fuentes</a>
                     <a class="dropdown-item" href="#">Gabinetes</a>
                   </div>
-                  <div class="column-xl-3 m-auto">
+                  <div class="col-lg-3 col-xl-3 m-auto">
                     <a class="dropdown-item" href="#">Memorias</a>
                     <a class="dropdown-item" href="#">Monitores
                     </a>
                     <a class="dropdown-item" href="#">Motherboards</a>
                     <a class="dropdown-item" href="#">Notebooks</a>
                   </div>
-                  <div class="column-xl-3 m-auto">
+                  <div class="col-lg-3 col-xl-3 m-auto">
                     <a class="dropdown-item " href="#">PC Armadas</a>
                     <a class="dropdown-item" href="#">Perif&eacute;ricos
                     </a>
@@ -91,7 +88,7 @@
                     <a class="dropdown-item" href="#">Procesadores</a>
                   </div>
 
-                  <div class="column-xl-3 m-auto">
+                  <div class="col-lg-3 col-xl-3 m-auto">
                     <div class="
                   fourth-column-elements">
                       <a class="dropdown-item pb-6" href="#">Refrigeraci&oacute;n</a>
@@ -99,17 +96,25 @@
                     </div>
 
 
-
-
                   </div>
             <li class="nav-item active pr-2">
-              <a class="nav-link ml-4 " href="miCuenta.html">Mi Cuenta<span class="sr-only">(current)</span></a>
+              <a class="nav-link ml-4 micuenta" href="miCuenta.html">Mi Cuenta<span
+                  class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active pr-2">
-              <a class="nav-link ml-4" href="#">Encontra tu equipo<span class="sr-only">(current)</span></a>
+              <a class="nav-link ml-4 miCuentaResponsive" href="miCuenta.html">Mi Cuenta<span
+                  class="sr-only">(current)</span></a>
+
+            </li>
+            <li class="nav-item active pr-2">
+              <a class="nav-link ml-4 carrito_responsive " href="carrito.html">Carrito<span
+                  class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active pr-2">
+              <a class="nav-link ml-4" href="contacto.html">Contactanos<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active pr-3">
-              <a class="nav-link ml-4" href="#">Ayuda<span class="sr-only">(current)</span></a>
+              <a class="nav-link ml-4" href="ayuda.html">Ayuda<span class="sr-only">(current)</span></a>
             </li>
         </div>
 
@@ -123,6 +128,14 @@
 
 
   </header>
+  <div class="social-networks">
+    <a class="" href="https://www.instagram.com/ "> <i class="fab fa-instagram instagram"></i></a>
+    <a class="" href="https://www.facebook.com/"><i class="fab fa-facebook facebook "></i></a>
+    <a class="" href="https://www.whatsapp.com/?lang=es"> <i class="fab fa-whatsapp whatsapp"></i></a>
+  </div>
+
+
+
   <main>
     <section class="container-fluid bg-dark p-0 ">
 
@@ -164,295 +177,213 @@
       <div class="container-fluid">
 
 
-        <div id="product-slider" class="carousel slide" data-interval="false" data-ride="false" data-pause="hover">
-          <!--data-ride="carousel"-->
-          <a class="carousel-control-prev " href="#product-slider" role="button" data-slide="prev">
+        <div class="slick">
 
-            <span class="carousel-control-prev-icon bg-danger flecha-izquierda" aria-hidden="true"></span>
-            <span class="sr-only ">Previous</span>
+      
+            
+          <div class="card " style="width:15rem;">
+  
+            <div class="card-body text-center ">
+              <img src="img/cooler-thermaltake-rgb.png" class="card-img-top img-fluid">
+              <h5 class="card-title row">Cooler Ux100 Rgb Thermaltake</h5>
 
-          </a>
+              <h4 class="card-text pt-4">$5000</h4>
 
-
-
-          <a class="carousel-control-next " href="#product-slider" role="button" data-slide="next">
-            <span class="carousel-control-next-icon flecha-derecha bg-danger " aria-hidden="true"></span>
-            <span class="sr-only bg-dark">Next</span>
-          </a>
-          <div class="carousel-inner">
+              <a href="#" class="btn btn-danger w-75 mt-3 ">Comprar</a>
 
 
-
-
-            <div class="carousel-item active" data-interval="300000">
-
-
-              <div class="row text-center d-flex justify-content-around ">
-
-                <div class="col-lg-3">
-                  <div class="card" style="width:15rem;">
-                    <div class="card-body ">
-                      <!--Pongo la imagen dentro del card-body para que se adapte automaticamente
-                          si lo pongo fuera del body posee un tamaño enorme-->
-                      <img src="img/cooler-thermaltake-rgb.png" class="card-img-top img-fluid">
-                      <h5 class="card-title row">Cooler Ux100 Rgb Thermaltake</h5>
-
-                      <h4 class="card-text pt-4">$5000</h4>
-
-                      <a href="#" class="btn btn-danger w-75 mt-3 ">Comprar</a>
-
-
-
-
-                    </div>
-
-
-                  </div>
-                </div>
-
-                <div class="col-lg-3">
-                  <div class="card " style="width:15rem;">
-
-                    <div class="card-body  ">
-                      <img src="img/memoria-corsair-rgb.png" class="card-img-top img-fluid" alt="...">
-                      <h5 class="card-title row">Memoria Corsair 16gb rgb DDR4</h5>
-
-                      <h4 class="card-text pt-4 ">$12000</h4>
-
-                      <a href="#" class=" w-75
-                           btn btn-danger mt-3 ">Comprar</a>
-
-
-
-
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-3">
-                  <div class="card  " style="width:15rem;">
-                    <div class="card-body ">
-                      <img src="img/ryzen 3.png" class="card-img-top img-fluid" alt="...">
-                      <h5 class="card-title row">
-                        Amd Ryzen 3 3200G 4.0 Ghz + Vega8 - AM4</h5>
-
-                      <h4 class="card-text pt-2">$5000</h4>
-
-                      <a href="#" class="mt-3 w-75 
-                     btn btn-danger ">Comprar</a>
-
-
-
-                    </div>
-
+            </div>
+          </div>
+          
+            
+              
+                <div class="card " style="width:15rem;">
+  
+                  <div class="card-body text-center ">
+                    <img src="img/memoria-corsair-rgb.png" class="card-img-top img-fluid" alt="...">
+                    <h5 class="card-title row">Memoria Corsair 16gb rgb DDR4</h5>
+      
+                    <h4 class="card-text pt-4 ">$12000</h4>
+      
+                    <a href="#" class=" w-75
+                         btn btn-danger mt-3 ">Comprar</a>
+      
+      
+      
+      
                   </div>
                 </div>
 
 
-
-                <div class="col-lg-3">
-                  <div class="card " style="width:15rem;">
-                    <div class="card-body">
-                      <img src="img/procesador-i9.png" class="card-img-top img-fluid" alt="...">
-                      <h5 class="card-title row ">
-                        Intel Core i9 9900K 5.0 Ghz Coffee Lake 1151 </h5>
-
-                      <h4 class="card-text pt-2 ">$5000</h4>
-
-                      <a href="#" class=" w-75 mt-3
-                         btn btn-danger ">Comprar</a>
+              
 
 
 
 
-                    </div>
+
+                <div class="card " style="width:15rem;">
+                  <div class="card-body text-center ">
+                    <img src="img/ryzen 3.png" class="card-img-top img-fluid" alt="...">
+                    <h5 class="card-title row">
+                      Amd Ryzen 3 3200G 4.0 Ghz + Vega8 - AM4</h5>
+      
+                    <h4 class="card-text pt-2">$5000</h4>
+      
+                    <a href="#" class="mt-3 w-75 
+                   btn btn-danger ">Comprar</a>
+      
+      
+      
                   </div>
+      
                 </div>
 
 
-
-
+              
+         
+            <div class="card " style="width:15rem;">
+              <div class="card-body text-center">
+                <img src="img/procesador-i9.png" class="card-img-top img-fluid" alt="...">
+                <h5 class="card-title row ">
+                  Intel Core i9 9900K 5.0 Ghz Coffee Lake 1151 </h5>
+  
+                <h4 class="card-text pt-2 ">$5000</h4>
+  
+                <a href="#" class=" w-75 mt-3
+                   btn btn-danger ">Comprar</a>
+  
+  
+  
+  
               </div>
+            </div>
+
+          
+            
+            
+
+          
+        
+        
+
+          <div class="card " style="width:15rem;">
+
+            <div class="card-body text-center ">
+              <img src="img/Mother-B550M.png" class="card-img-top img-fluid" alt="...">
+              <h5 class="card-title row"> Mother B550m Ds3h Gigabyte Am4</h5>
+
+              <h4 class="card-text pt-2 ">$5000</h4>
+
+              <a href="#" class=" w-75 mt-3
+                 btn btn-danger ">Comprar</a>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="card " style="width:15rem;">
+
+            <div class="card-body text-center">
+              <img src="img/IntelCoreI9-10900k.png" class="card-img-top img-fluid" alt="...">
+              <h5 class="card-title row">
+                Procesador Intel Core I9 10900k 10ma
+
+              </h5>
+
+              <h4 class="card-text pt-2">$5000</h4>
+
+              <a href="#" class=" w-75 mt-3
+                   btn btn-danger ">Comprar</a>
+
 
 
             </div>
 
+          </div>
+
+          <div class="card" style="width:15rem;">
+
+            <div class="card-body text-center">
+              <img src="img/ssdCrucial.png" class="card-img-top img-fluid" alt="...">
+              <h5 class="card-title row ">
+                Disco Ssd 120gb Bx500 Crucial </h5>
+
+              <h4 class="card-text pt-4">$5000</h4>
+
+              <a href="#" class=" w-75  mt-3
+                       btn btn-danger ">Comprar</a>
 
 
+            </div>
+          </div>
 
-            <div class="carousel-item" data-interval="2000">
+          <div class="card " style="width:15rem;">
+            <div class="card-body text-center ">
+              <img src="img/ssdbx240gb.png" class="card-img-top img-fluid" alt="...">
+              <h5 class="card-title row"> Disco Ssd 240gb Bx500 Crucial </h5>
 
-              <div class="row text-center">
+              <h4 class="card-text pt-4">$5000</h4>
 
-                <div class="col-lg-3">
-                  <div class="card " style="width:15rem;">
-
-                    <div class="card-body ">
-                      <img src="img/Mother-B550M.png" class="card-img-top img-fluid" alt="...">
-                      <h5 class="card-title row"> Mother B550m Ds3h Gigabyte Am4</h5>
-
-                      <h4 class="card-text pt-2 ">$5000</h4>
-
-                      <a href="#" class=" w-75 mt-3
-                         btn btn-danger ">Comprar</a>
-
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="col-lg-3">
-                  <div class="card  " style="width:15rem;">
-                    <div class="card-body ">
-                      <img src="img/rtx2080.png" class="card-img-top img-fluid" alt="...">
-                      <h5 class="card-title row ">Placa De Video Rtx 2080 Super 8gb Gddr6
-                      </h5>
-
-                      <h4 class="card-text pt-2">$5000</h4>
-
-                      <a href="#" class=" w-75 mt-3
-                               btn btn-danger ">Comprar</a>
-
-
-
-
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-3">
-                  <div class="card " style="width:15rem;">
-
-                    <div class="card-body">
-                      <img src="img/IntelCoreI9-10900k.png" class="card-img-top img-fluid" alt="...">
-                      <h5 class="card-title row">
-                        Procesador Intel Core I9 10900k 10ma
-
-                      </h5>
-
-                      <h4 class="card-text pt-2">$5000</h4>
-
-                      <a href="#" class=" w-75 mt-3
-                           btn btn-danger ">Comprar</a>
-
-
-
-                    </div>
-
-                  </div>
-                </div>
-
-
-
-                <div class="col-lg-3">
-                  <div class="card" style="width:15rem;">
-
-                    <div class="card-body">
-                      <img src="img/ssdCrucial.png" class="card-img-top img-fluid" alt="...">
-                      <h5 class="card-title row ">
-                        Disco Ssd 120gb Bx500 Crucial </h5>
-
-                      <h4 class="card-text pt-4">$5000</h4>
-
-                      <a href="#" class=" w-75  mt-3
-                               btn btn-danger ">Comprar</a>
-
-
-                    </div>
-                  </div>
-                </div>
-
-
-
-              </div>
-
+              <a href="#" class=" w-75 mt-3
+                 btn btn-danger ">Comprar</a>
 
             </div>
 
 
-            <div class="carousel-item">
+          </div>
 
 
+          <div class="card " style="width:15rem;">
 
-              <div class="row text-center">
+            <div class="card-body text-center ">
+              <img src="img/RamToughram.png" class="card-img-top img-fluid" alt="...">
+              <h5 class="card-title row">Memoria 16gb 2x8 3200mhz Toughram
+              </h5>
 
-                <div class="col-lg-3">
-                  <div class="card " style="width:15rem;">
-                    <div class="card-body ">
-                      <img src="img/ssdbx240gb.png" class="card-img-top img-fluid" alt="...">
-                      <h5 class="card-title row"> Disco Ssd 240gb Bx500 Crucial </h5>
+              <h4 class="card-text pt-2">$5000</h4>
 
-                      <h4 class="card-text pt-4">$5000</h4>
-
-                      <a href="#" class=" w-75 mt-3
-                         btn btn-danger ">Comprar</a>
-
-                    </div>
-
-
-                  </div>
-                </div>
-
-                <div class="col-lg-3">
-                  <div class="card " style="width:15rem;">
-
-                    <div class="card-body ">
-                      <img src="img/RamToughram.png" class="card-img-top img-fluid" alt="...">
-                      <h5 class="card-title row">Memoria 16gb 2x8 3200mhz Toughram
-                      </h5>
-
-                      <h4 class="card-text pt-2">$5000</h4>
-
-                      <a href="#" class=" w-75 mt-3
-                               btn btn-danger ">Comprar</a>
+              <a href="#" class=" w-75 mt-3
+                       btn btn-danger ">Comprar</a>
 
 
 
 
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-3">
-                  <div class="card " style="width:15rem;">
-
-                    <div class="card-body ">
-                      <img src="img/monitorPhilips.png" class="card-img-top img-fluid" alt="...">
-                      <h5 class="card-title row">
-                        Monitor 19 Lcd/led Hdmi Philips </h5>
-
-                      <h4 class="card-text pt-4">$5000</h4>
-
-                      <a href="#" class=" w-75 mt-3  
-                           btn btn-danger ">Comprar</a>
-
-                    </div>
-
-                  </div>
-                </div>
+            </div>
+          </div>
 
 
-                <div class="col-lg-3">
-                  <div class="card " style="width:15rem;">
+          <div class="card " style="width:15rem;">
+
+            <div class="card-body text-center ">
+              <img src="img/monitorPhilips.png" class="card-img-top img-fluid" alt="...">
+              <h5 class="card-title row">
+                Monitor 19 Lcd/led Hdmi Philips </h5>
+
+              <h4 class="card-text pt-4">$5000</h4>
+
+              <a href="#" class=" w-75 mt-3  
+                   btn btn-danger ">Comprar</a>
+
+            </div>
+
+          </div>
+
+          <div class="card " style="width:15rem;">
 
 
-                    <div class="card-body">
-                      <img src="img/monitorLg.png" class="card-img-top img-fluid" alt="...">
-                      <h5 class="card-title row">
-                        Monitor 27 Led 27mk400h-b Fhd Lg </h5>
+            <div class="card-body text-center">
+              <img src="img/monitorLg.png" class="card-img-top img-fluid" alt="...">
+              <h5 class="card-title row">
+                Monitor 27 Led 27mk400h-b Fhd Lg </h5>
 
 
 
-                      <h4 class="card-text pt-2  ">$5000</h4>
+              <h4 class="card-text pt-2  ">$5000</h4>
 
-                      <a href="#" class="w-75 mt-3
-                               btn btn-danger ">Comprar</a>
-
-                    </div>
-                  </div>
-                </div>
-
-              </div>
+              <a href="#" class="w-75 mt-3
+                       btn btn-danger ">Comprar</a>
 
             </div>
           </div>
@@ -460,7 +391,31 @@
 
 
 
+
+
+
+          <div class="card  " style="width:15rem;">
+            <div class="card-body text-center">
+              <img src="img/rtx2080.png" class="card-img-top img-fluid" alt="...">
+              <h5 class="card-title row ">Placa De Video Rtx 2080 Super 8gb Gddr6
+              </h5>
+
+              <h4 class="card-text pt-2">$5000</h4>
+
+              <a href="#" class=" w-75 mt-3
+                       btn btn-danger ">Comprar</a>
+
+            </div>
+          </div>
+
+
+
+
+
         </div>
+
+
+
 
       </div>
 
@@ -473,21 +428,22 @@
   </main>
 
   <footer class="container-fluid bg-footer p-4">
-    <div class="container">
+    <div class="container ">
       <div class="row">
-        <div class="col-lg-4">
-          <div class="container">
-            <p class="pl-5 pt-2">Informacion</p>
-            <ul class="listado-preguntas ">
-              <li class="pl-2 pb-3"><a class="text-light text-decoration-none" href="index.html">INICIO</a></li>
-              <li class="pl-2 pb-3"><a class="text-light text-decoration-none" href="contacto.html">CONTACTO</a></li>
+        <div class="col-lg-4 col-md-4 first-column ">
+          <div class="container menuFooter">
+            <p class=" pt-2 informacion">INFORMACI&Oacute;N </p>
+            <ul class="listado-preguntas  ">
+
+              <li class=" pb-3"><a class="text-light text-decoration-none" href="index.html">INICIO</a></li>
+              <li class=" pb-3"><a class="text-light text-decoration-none" href="contacto.html">CONTACTO</a></li>
               <li><a class="text-light" href="donde_estamos.html">¿DÓNDE ESTAMOS?</a></li>
 
             </ul>
           </div>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4 second-column">
           <div class="container pt-1 text-center">
             <p>XTREME GAMING</p>
             <p>2020</p>
@@ -495,13 +451,14 @@
           </div>
         </div>
 
-        <div class="col-lg-4">
-          <div class="container">
+        <div class="col-lg-4 col-md-4 
+        third-column">
+          <div class="container container-newsletter">
 
-            <p>NEWSLEETER</p>
+            <p>NEWSLETTER</p>
             <p>Recibi ofertas en tu mail</p>
-            <input type="text" placeholder="Tu Email">
-            <button>SUSCRIBIRME</button>
+            <input type="text" class="inputNewsletter" placeholder="Tu Email">
+            <button class="btn btn-danger boton-suscribirme">SUSCRIBIRME</button>
           </div>
 
         </div>
@@ -522,7 +479,14 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
- 
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+  <!--Slider slick-->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/slick.js"></script>
+
+  <script src="js/firebaseconfig.js"></script>
+  <script src="js/app.js"></script>
   <script src="js/carousel.js"></script>
 
 </body>
