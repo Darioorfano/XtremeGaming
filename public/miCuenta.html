@@ -25,12 +25,12 @@
 <body>
   <header class="container-fluid bg-header pt-4 ">
 
-    <div class="row">
-      <div class="col-xl-4 ml-4 d-flex">
+    <div class="row d-lg-flex flex-lg-nowrap">
+      <div class=" col-lg-4 mt-lg-3 col-xl-4 ml-4 d-flex ">
         <a class="navbar-brand logo" href="index.html">XTREME GAMING</a>
       </div>
 
-      <div class="col-xl-4 mr-1 mt-4">
+      <div class="col-lg-5 col-xl-4 ml-xl-5 pt-xl-3 mt-xl-4 mr-1 mt-4">
 
         <form class="form-inline my-2 my-lg-0 ">
           <input class="form-control input-busqueda mr-sm-2 w-100 " type="search" placeholder="Buscar producto..."
@@ -43,15 +43,14 @@
 
       </div>
 
-      <div class="col-xl-1 ml-5 mt-4 icons  ">
-        <a class="usuario" href="login.html" ><i class="fas fa-user  "></i></a>
-        <a href=""><i class="fas fa-shopping-cart ml-4 " ></i></a>
-
-      </div>
+      <div class="col-lg-1 col-xl-1 pt-xl-3 ml-5 mt-4 icons  ">
+        <a class="usuario" href="login.html"><i class="fas fa-user  "></i></a>
+        <a href=""><i class="fas fa-shopping-cart ml-4 "></i></a>
 
       </div>
 
     </div>
+    
 
 
     <div class="row ">
@@ -75,20 +74,20 @@
               </a>
               <div class="dropdown-menu expand-menu " aria-labelledby="navbarDropdownMenuLink">
                 <div class="row">
-                  <div class="col-xl-3 m-auto">
+                  <div class="col-lg-3 col-xl-3 m-auto">
                     <a class="dropdown-item" href="#">Almacenamiento</a>
                     <a class="dropdown-item" href="#">Combo actualizaci&oacute;n</a>
                     <a class="dropdown-item" href="#">Fuentes</a>
                     <a class="dropdown-item" href="#">Gabinetes</a>
                   </div>
-                  <div class="col-xl-3 m-auto">
+                  <div class="col-lg-3 col-xl-3 m-auto">
                     <a class="dropdown-item" href="#">Memorias</a>
                     <a class="dropdown-item" href="#">Monitores
                     </a>
                     <a class="dropdown-item" href="#">Motherboards</a>
                     <a class="dropdown-item" href="#">Notebooks</a>
                   </div>
-                  <div class="col-xl-3 m-auto">
+                  <div class="col-lg-3 col-xl-3 m-auto">
                     <a class="dropdown-item " href="#">PC Armadas</a>
                     <a class="dropdown-item" href="#">Perif&eacute;ricos
                     </a>
@@ -96,7 +95,7 @@
                     <a class="dropdown-item" href="#">Procesadores</a>
                   </div>
 
-                  <div class="col-xl-3 m-auto">
+                  <div class="col-lg-3 col-xl-3 m-auto">
                     <div class="
                   fourth-column-elements">
                       <a class="dropdown-item pb-6" href="#">Refrigeraci&oacute;n</a>
@@ -106,14 +105,12 @@
 
 
                   </div>
-            <li class="nav-item active pr-2">
-              <a class="nav-link ml-4 micuenta " href="miCuenta.html">Mi Cuenta<span class="sr-only">(current)</span></a>
-            </li>
+          
             <li class="nav-item active pr-2">
               <a class="nav-link ml-4 carrito_responsive  " href="carrito.html">Carrito<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active pr-2">
-              <a class="nav-link ml-4" href="#">Contact&aacute;nos<span class="sr-only">(current)</span></a>
+              <a class="nav-link ml-4" href="#">Contactanos<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active pr-3">
               <a class="nav-link ml-4" href="ayuda.html">Ayuda<span class="sr-only">(current)</span></a>
@@ -153,8 +150,8 @@
    -->
      
         
-        <div class="row d-flex ">
-          <div class="col-lg-3  order-2 order-sm-3 order-md ">
+        <div class="row d-flex flex-lg-nowrap ">
+          <div class="col-lg-3  ml-lg-4 order-lg-1 order-2 order-sm-3 order-md  ">
  
             <button type="button" id="btnCustomBackground" class="btn btn-lg btn-danger " data-toggle="modal" data-target="#exampleModal">
               Modificar fondo
@@ -225,25 +222,12 @@
 
           </div>
         
-          <!--<div class="col-lg-6  order-1 order-sm-2 d-flex justify-content-center">
-        
-     
-            <article id="fotoPerfil" class="m-auto">
-    
-            </article>
-    
-    
-          </div>
-          
-          <div class="col-lg-3 order-3 ">
-           <button type="button" class="btn btn-lg btn-danger "  id="btnLogout">Cerrar Sesion</button>
-          </div>
--->
+         
           
 
 
 
-          <div class="col-lg-6  order-1 order-sm-2 d-flex justify-content-center">
+          <div class="col-lg-6  order-lg-2 order-1 order-sm-2 d-flex justify-content-center">
         
      
            <article id="fotoPerfil" class="m-auto">
@@ -253,7 +237,7 @@
    
          </div>
          
-         <div class="col-lg-3 order-3 ">
+         <div class="col-lg-3 mt-lg-1 order-3  ">
           <button type="button" class="btn btn-lg btn-danger "  id="btnLogout">Cerrar Sesion</button>
          </div>
        
@@ -263,7 +247,7 @@
     
     </section>
     
-    <section class="container ">
+    <section class="container pb-3">
       <article class="d-flex mb-4  ">
         <h3 class="m-auto" id="nombreUsuario"></h3>
       </article>
@@ -286,7 +270,7 @@
 
   </main>
 
-  <footer class="container-fluid bg-footer p-4">
+  <footer class="container-fluid bg-footer p-4 pb-5">
     <div class="container ">
       <div class="row">
         <div class="col-lg-4 col-md-4 first-column ">

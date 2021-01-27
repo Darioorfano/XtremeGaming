@@ -36,15 +36,17 @@ firebase.auth().onAuthStateChanged(function (user) {
         }
         
         iconoLogin.style.display="none";
-       
+   
+        miCuentaResponsive.style.display="flex";
       
     } else {
         console.log("No se ha encontrado el usuario");
    
         
         miCuentaResponsive.href="http://127.0.0.1:5500/public/login.html";
-    
-        miCuenta.style.display="none";
+       // miCuentaResponsive.href="/login.html";
+       
+       miCuenta.style.display="none";
       
     }
 
@@ -55,24 +57,27 @@ var botonRegistrar=document.getElementById("boton-registrarse");
 
 if(botonRegistrar){
     botonRegistrar.addEventListener("click",function(){
-        var email=document.getElementById("emailRegistro").value;
-        var password=document.getElementById("contraseñaRegistro").value;
-    
-        firebase.auth().createUserWithEmailAndPassword(email, password)
+        var emailRegistro=document.getElementById("emailRegistro").value;
+        var passwordRegistro=document.getElementById("contraseñaRegistro").value;
+    console.log
+        firebase.auth().createUserWithEmailAndPassword(emailRegistro, passwordRegistro)
         .then((user) => {
           console.log("Registro correcto");
      
             window.location.replace=("http://127.0.0.1:5500/public/miCuenta.html");
         
-         
+          // window.location.replace=("/miCuenta.html");
+        
       
             console.log(user);
         })
         .catch((error) => {
           var errorCode = error.code;
           var errorMessage = error.message;
-          console.log("Escriba de manera correcta su mail");
+          
+          console.log(errorCode);
           console.log(errorMessage);
+            
         });
     
     
@@ -82,24 +87,7 @@ if(botonRegistrar){
 
 }
 
-/*
-function mostrarCerrar() {
-    btnLogin.style.display = "none";
-    btnLogout.style.display = "block";
-    btnCustomBackground.style.display = "flex";
-    btnLoginGoogle.style.display = "none";
-    miCuenta.style.display="flex";
 
-}
-
-function mostrarIniciar() {
-    btnLogout.style.display = "none";
-    btnLogin.style.display = "block";
-    btnCustomBackground.style.display = "none";
-    miCuenta.style.display="none";
-     
-}
-*/
 var botonInicioSesion=document.getElementById("botonInicioSesion");
 
 if(botonInicioSesion){
@@ -113,6 +101,7 @@ var password=document.getElementById("inputPassword").value;
     .then((user) => {
 
         window.location.replace("http://127.0.0.1:5500/public/miCuenta.html");
+        //window.location.replace("/miCuenta.html");
         console.log(user);
     })
     .catch((error) => {
@@ -156,7 +145,7 @@ if (btnLoginGoogle) {
 
 
                 window.location.replace("http://127.0.0.1:5500/public/miCuenta.html");
-                //window.location.replace("/miCuenta.html");
+               // window.location.replace("/miCuenta.html");
 
             }).catch(function (err) {
                 console.log(err)
@@ -171,7 +160,7 @@ if (btnLogout) {
         firebase.auth().signOut().then(function () {
             // Sign-out successful.
             console.log("Se ha desconectado Correctamente");
-            //window.location.replace("/index.html");
+           // window.location.replace("/index.html");
             window.location.replace("http://127.0.0.1:5500/public/index.html");
         }).catch(function (error) {
             // An error happened.
@@ -194,9 +183,9 @@ buttonSave.addEventListener("click", function () {
     //devuelva el elemento que está checkeado,ya te devuelve el que necesitas
     var radios = document.querySelector(".radios:checked").value;
     //Esto para localhost
-    //var url = "../public/img/" + radios;
+    var url = "../public/img/" + radios;
 
-    var url = "../img/" + radios;
+    //var url = "../img/" + radios;
 
     //Segun el input radio que seleccione el usuario, se establecera dicha imagen de portada
     bgUser.style.backgroundImage = `url(${url})`;

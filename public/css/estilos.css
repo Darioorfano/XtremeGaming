@@ -193,7 +193,7 @@ font-size: 1.3em;
 margin-top: 0.5em;
 }
 #fotoPerfil img{
-height: 10em;
+
 border-radius: 50%;
 }
 #nombreUsuario{
@@ -218,7 +218,7 @@ background-size: cover;
 
 
 
-@media screen and (max-width: 47em){
+@media screen and (max-width: 48em){
  
  .logo{
    font-size: 2em;
@@ -243,27 +243,16 @@ background-size: cover;
 .miCuentaResponsive{
   display:flex;
 }
+
 .carrito_responsive{
 display: flex;
 }
 .title{
-  display: flex;
-  justify-content: center;
+ text-align: center;
   font-size: 1.5em;
 }
-.row-responsive{
-display: flex;
-  flex-direction: row;
-  justify-content: center;
-margin-bottom: 3em;
-}
 
-.flecha-izquierda{
-  display: none;
-}
-.flecha-derecha{
-  display: none;
-}
+
 
 .menuFooter{  
 margin-bottom: 2em;
@@ -336,64 +325,8 @@ text-align: center;
 
 
 }
-@media screen and (max-width:47em){
 
-.logo{
-  margin:auto;
-}
-.icons a{
-  display: none;
-
- }
- .expand-menu{
-  height: 53vh;
-}
- .boton{
-   right: 0.5em;
- }
- .miCuentaResponsive{
-  display:flex;
-}
-.title{
-  text-align: center;
-}
-
-
-.informacion{
-  text-align: center;
-  }
-  
-  .listado-preguntas {
-   display:flex;
-   flex-direction: column;
-   justify-content: center;
-   padding:0;
-   
-   }
-   .listado-preguntas li{
-     margin: auto;
-   }
- .container-newsletter{
-  margin-top:1em;
-}
-.container-newsletter p{
-  text-align:center;
-}
-.inputNewsletter{
-  display: flex;
-margin: auto;
-}
- .boton-suscribirme{
-   display: flex;
-   margin:0.5em auto;
-  
-}
-.social-networks{
-  display: none;
-}
-
-}
-@media screen and (max-width:64em){
+@media screen  and (max-width:62em){
 
   .logo{
     font-size: 2em;
@@ -415,8 +348,15 @@ margin: auto;
     justify-content: center;
     font-size: 2.5em;
   }
-  
-.miCuentaResponsive{
+  .micuenta{
+    display: none;
+  }
+
+  .miCuentaResponsive{
+  display: flex;
+}
+
+.carrito_responsive{
   display: flex;
 }
   #btnCustomBackground{
@@ -431,13 +371,55 @@ margin: auto;
   .social-networks{
     display: none;
   }
+  
   .second-column{
     margin-top: 0.2em;
   }
   .third-column{
     margin-top: 0.3em;
   }
+  
 .boton-suscribirme{
   margin-top: 1em;
 }
+
+}
+@media screen and (max-width:75em){
+ 
+ .logo{
+   font-size: 2em;
+
+  }
+  
+
+.micuenta{
+  display: flex;
+}
+.boton-suscribirme{
+  margin-top: 0.5em;
+}
+.second-column{
+  margin-top: 0.2em;
+}
+.third-column{
+  margin-top: 0.3em;
+}
+
+.expand-menu{
+ width: 60vw;
+}
+}
+
+@media screen and (max-width:120em){
+  .micuenta{
+    display: none;
+  }
+  
+  .second-column{
+    margin-top: 0.2em;
+  }
+  .third-column{
+    margin-top: 0.3em;
+  }
+ 
 }
