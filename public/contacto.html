@@ -12,11 +12,11 @@
 
   <link rel="stylesheet" href="css/all.css">
   <link rel="stylesheet" href="css/estilos.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+ 
   <title>Xtreme Gaming</title>
 </head>
 
-<body>
+<body class="bg-dark">
   <header class="container-fluid bg-header pt-4 ">
 
     <div class="row d-lg-flex flex-lg-nowrap">
@@ -97,22 +97,20 @@
 
 
                   </div>
-            <li class="nav-item active pr-2">
-              <a class="nav-link ml-4 micuenta " href="miCuenta.html">Mi Cuenta<span
-                  class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active pr-2">
-              <a class="nav-link ml-4 miCuentaResponsive" href="miCuenta.html">Mi Cuenta<span
-                  class="sr-only">(current)</span></a>
-
-            </li>
-            <li class="nav-item active pr-2">
-              <a class="nav-link ml-4 carrito_responsive  " href="carrito.html">Carrito<span
-                  class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active pr-2">
-              <a class="nav-link ml-4" href="contacto.html">Contactanos<span class="sr-only">(current)</span></a>
-            </li>
+                  <li class="nav-item active pr-2">
+                    <a class="nav-link ml-4 micuenta" href="miCuenta.html">Mi Cuenta<span
+                        class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active pr-2">
+                    <a class="nav-link ml-4 miCuentaResponsive" href="miCuenta.html">Mi Cuenta<span
+                        class="sr-only">(current)</span></a>
+      
+                  </li>
+                  <li class="nav-item active pr-2">
+                    <a class="nav-link ml-4 carrito_responsive " href="carrito.html">Carrito<span
+                        class="sr-only">(current)</span></a>
+                  </li>
+           
             <li class="nav-item active pr-3">
               <a class="nav-link ml-4" href="ayuda.html">Ayuda<span class="sr-only">(current)</span></a>
             </li>
@@ -135,25 +133,40 @@
   </div>
 
 
-<main>
-    <section>
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto mt-5 pt-3">
+        <div class="card card-signin my-5">
+          <div class="card-body mb-3">
+            <h5 class="card-title text-center pt-4">Contacto</h5>
+            <form class="form-signin">
+              <div class="form-label-group">
+                <label for="Correo" class="pt-xl-2" >Correo Electronico:</label>
+                <input type="email" id="inputEmailRegistro" class="form-control mb-4 mt-1" placeholder="Ingrese su correo electronico"
+                   required autofocus>
 
-        <form>
-            <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-           
+              </div>
+
+              <div class="form-label-group">
+                <label for="Asunto">Asunto:</label>
+                <input type="text" id="Asunto" class="form-control mb-4" required placeholder="Ingrese su asunto" >
+
+              </div>
             
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Example textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-          </form>
-    
-
-
-    </section>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Contenido</label>
+                <textarea class="form-control" id="textArea"  placeholder="Escriba su contenido" rows="4"></textarea>
+              </div>
+            
+              <button  id="enviar" class="btn pl-5 pr-5 pt-2 pb-2 btn-danger d-flex m-auto">Enviar</button>
+              <p id="mensajeError"></p>
+              <p id="mostrarCaracteres"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
     
 
 
@@ -176,7 +189,7 @@
 
               <li class=" pb-3"><a class="text-light text-decoration-none" href="index.html">INICIO</a></li>
               <li class=" pb-3"><a class="text-light text-decoration-none" href="contacto.html">CONTACTO</a></li>
-              <li><a class="text-light" href="donde_estamos.html">¿DÓNDE ESTAMOS?</a></li>
+              <li><a class="text-light" href="ayuda.html">¿DÓNDE ESTAMOS?</a></li>
 
             </ul>
           </div>
@@ -218,9 +231,20 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-
-
-
-
-
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+  <!--Own Slider-->
+ 
+  <script src="js/firebaseconfig.js"></script>
   
+    
+    <script src="js/app.js"></script>
+
+
+
+
+
+  </body>
+  </html>
