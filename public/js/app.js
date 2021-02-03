@@ -55,45 +55,53 @@ firebase.auth().onAuthStateChanged(function (user) {
     
 });
 
-
-function caracteresRestantes(){
-    var maximo =1000;
-    var error=false;
-    var mensajeError=document.getElementById("mensajeError");
-    var mostrarCaracteres=document.getElementById("mostrarCaracteres");
-    var textArea= document.getElementById("textArea").value.length;
-    var enviar=document.getElementById("enviar");
-    var caracteres_restantes = maximo - textArea;
-    
-    enviar.addEventListener("click",function(){
-
-
-        if(textArea <=0){
-            mensajeError.innerHTML="<p> El contenido no puede quedar vacio </p>";
-            mensajeError.style.color="red";
-    
-        }
+var textArea= document.getElementById("textArea");
+if(textArea){
+console.log(textArea.value.length);
+    textArea.addEventListener("keyup",function(){
+        var maximo =1000;
+        var mostrarCaracteres=document.getElementById("mostrarCaracteres");
+        var caracteres_restantes = maximo - textArea.value.length;
+            
+        mostrarCaracteres.innerHTML="<p> Caracteres restantes: </p>" +caracteres_restantes;
+            
 
 
     });
-    
-    
-    
-    if (error) {
-        
-        return false;
-    
-    }else{
-        mostrarCaracteres.innerHTML="<p> Caracteres restantes: </p>" +caracteres_restantes;
-        return true;
-    }
-    
+
 }
-    document.getElementById("textArea").addEventListener("keyup",caracteresRestantes());
-    document.getElementById("enviar").addEventListener("click",caracteresRestantes());
+
+var enviar=document.getElementById("enviar");
+if(enviar){
+enviar.addEventListener("click",function(event){
+    event.preventDefault();
+    if(textArea.value.length <=0){
+        mensajeError.innerHTML="<p> El contenido no puede quedar vacio </p>";
+        mensajeError.style.color="red";
+
+    }
+
+});
+
+}
+
+function caracteresRestantes(textArea){
+    var maximo =1000;
+    var mensajeError=document.getElementById("mensajeError");
+    var mostrarCaracteres=document.getElementById("mostrarCaracteres");
+   
+    var enviar=document.getElementById("enviar");
+    var caracteres_restantes = maximo - textArea;
+        
+   console.log("anda");
+    mostrarCaracteres.innerHTML="<p> Caracteres restantes: </p>" +caracteres_restantes;
+        
+}
+    
 
 
-    //Ver porque no cambia a otro type y no desaparece el icono//
+
+   
 var mostrarPassword=document.querySelector("#mostrarOjito");
 var ocultarPassword=document.querySelector("#ocultarOjito");
 var ojito=document.querySelector("#ojito");

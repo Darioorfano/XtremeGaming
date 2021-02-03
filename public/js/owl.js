@@ -13,7 +13,7 @@ $(document).ready(function(){
            
         0:{
             items:1,
-            dots:true,
+            dots:false,
             
             nav:false,
  
